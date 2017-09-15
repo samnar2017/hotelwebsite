@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* CSS Document */
+.content {
+    width: 736px;
+    height: 100%;
+	border:thick;
+
+}
+
+ul li  {
+   display:inline-block;
+   float:left;
+}
+
+.pics { 
+	width:218px;
+	background:#eff1f2; 
+	height:32px
+
+}
+.text {	
+	width : 460px;
+	vertical-align:text-top;
+	align : right;
+}
+
+.text span li {
+	display:table-row;
+	float:none;
+	list-style:square;
+	display:list-item;
+}
+
+.more {
+	display: none;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666; 
+	}
+
+   

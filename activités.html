@@ -1,0 +1,524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lan="en">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Activités en Ile Maurice</title>
+<meta name="keywords" content="burnas beach" />
+<meta name="keywords" content="Bur-Nas Beach" />
+<link href="templatemo_style3.css" rel="stylesheet" type="text/css" />
+
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+ 
+<style type="text/css">
+<!--
+
+
+-->
+</style>
+
+<script type="text/javascript">
+		
+		
+			function initialize() {
+				var latlng = new google.maps.LatLng(-19.9914,57.592607);
+				var settings = {
+					zoom: 17,
+					disableDoubleClickZoom: true,
+					rotateControl:true,
+					zoomControl:false,
+					draggable: true,
+					center: latlng,
+					mapTypeControl: false,
+					navigationControl: false,
+	   				scrollwheel: false,
+					mapTypeId: google.maps.MapTypeId.ROADMAP};
+				var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
+				
+				
+				var companyImage = new google.maps.MarkerImage('images/logo.png',
+					new google.maps.Size(100,50),
+					new google.maps.Point(0,0),
+					new google.maps.Point(50,50)
+				);
+
+				var companyShadow = new google.maps.MarkerImage('images/logo_shadow.png',
+					new google.maps.Size(130,50),
+					new google.maps.Point(0,0),
+					new google.maps.Point(65, 50));
+
+				var companyPos = new google.maps.LatLng(-19.9914,57.592607);
+
+				var companyMarker = new google.maps.Marker({
+					position: companyPos,
+					map: map,
+					icon: companyImage,
+					shadow: companyShadow,
+					title:"Bur-Nas-Beach",
+					zIndex: 5});
+					
+					
+					
+				
+				var trainImage = new google.maps.MarkerImage('images/train.png',
+					new google.maps.Size(50,50),
+					new google.maps.Point(0,0),
+					new google.maps.Point(50,50)
+				);
+
+				var trainShadow = new google.maps.MarkerImage('images/train_shadow.png',
+					new google.maps.Size(70,50),
+					new google.maps.Point(0,0),
+					new google.maps.Point(60, 50)
+				);
+
+				var trainPos = new google.maps.LatLng(-19.9895,57.595  );
+
+				var trainMarker = new google.maps.Marker({
+					position: trainPos,
+					map: map,
+					icon: trainImage,
+					shadow: trainShadow,
+					title:"Train Station",
+					zIndex: 4
+				});
+				
+				
+
+				var beachImage = new google.maps.MarkerImage('images/beach.png',
+					new google.maps.Size(70,80),
+					new google.maps.Point(0,0),
+					new google.maps.Point(35,40)
+				);
+
+				var beachShadow = new google.maps.MarkerImage('images/parking_shadow.png',
+					new google.maps.Size(70,50),
+					new google.maps.Point(0,0),
+					new google.maps.Point(60, 50)
+				);
+
+				var beachPos = new google.maps.LatLng(-19.9934,57.5915);
+
+				var beachMarker = new google.maps.Marker({
+					position: beachPos,
+					map: map,
+					icon: beachImage,
+					shadow: beachShadow,
+					title:"Pereybere beach",
+					zIndex: 3
+				});
+				
+				
+				
+				
+				var restImage = new google.maps.MarkerImage('images/rest.png',
+					new google.maps.Size(100,100),
+					new google.maps.Point(0,0),
+					new google.maps.Point(60,60)
+				);
+
+				var restShadow = new google.maps.MarkerImage('images/rest_shadow.png',
+					new google.maps.Size(125,100),
+					new google.maps.Point(0,0),
+					new google.maps.Point(60, 50)
+				);
+
+				var restPos = new google.maps.LatLng(-19.9927,57.592);
+
+				var restMarker = new google.maps.Marker({
+					position: restPos,
+					map: map,
+					icon: restImage,
+					shadow: restShadow,
+					title:"Restaurant",
+					zIndex: 2
+				});
+				
+				var rest2Image = new google.maps.MarkerImage('images/rest2.png',
+					new google.maps.Size(100,100),
+					new google.maps.Point(0,0),
+					new google.maps.Point(60,60)
+				);
+
+				var rest2Shadow = new google.maps.MarkerImage('images/rest2_shadow.png',
+					new google.maps.Size(71,50),
+					new google.maps.Point(0,0),
+					new google.maps.Point(60, 50)
+				);
+
+				var rest2Pos = new google.maps.LatLng(-19.9927,57.5931);
+
+				var rest2Marker = new google.maps.Marker({
+					position: rest2Pos,
+					map: map,
+					icon: rest2Image,
+					shadow: rest2Shadow,
+					title:"Restaurant",
+					zIndex: 1
+				});
+				
+				
+				var WinnersImage = new google.maps.MarkerImage('images/Winners.png',
+					new google.maps.Size(100,100),
+					new google.maps.Point(0,0),
+					new google.maps.Point(60,60)
+				);
+
+				var WinnersShadow = new google.maps.MarkerImage('images/rest2_shadow.png',
+					new google.maps.Size(71,50),
+					new google.maps.Point(0,0),
+					new google.maps.Point(60, 50)
+				);
+
+				var WinnersPos = new google.maps.LatLng(-19.9921,57.5931);
+
+				var WinnersMarker = new google.maps.Marker({
+					position: WinnersPos,
+					map: map,
+					icon: WinnersImage,
+					shadow: WinnersShadow,
+					title:"Supermarket",
+					zIndex: 5
+				});
+			
+				var carImage = new google.maps.MarkerImage('images/car.png',
+					new google.maps.Size(110,110),
+					new google.maps.Point(0,0),
+					new google.maps.Point(70,70)
+				);
+
+				var carShadow = new google.maps.MarkerImage('images/car_shadow.png',
+					new google.maps.Size(71,50),
+					new google.maps.Point(0,0),
+					new google.maps.Point(60, 50)
+				);
+
+				var carPos = new google.maps.LatLng(-19.99345,57.59275);
+
+				var carMarker = new google.maps.Marker({
+					position: carPos,
+					map: map,
+					icon: carImage,
+					shadow: carShadow,
+					title:"Rent a car",
+					zIndex: 1
+				});
+				
+				var nocasaImage = new google.maps.MarkerImage('images/nocasa.png',
+					new google.maps.Size(300,300),
+					new google.maps.Point(0,0),
+					new google.maps.Point(300,300)
+				);
+
+				var nocasaShadow = new google.maps.MarkerImage('images/nocasa_shadow.png',
+					new google.maps.Size(71,50),
+					new google.maps.Point(0,0),
+					new google.maps.Point(60, 50)
+				);
+
+				var nocasaPos = new google.maps.LatLng(-19.9934,57.59671);
+
+				var nocasaMarker = new google.maps.Marker({
+					position: nocasaPos,
+					map: map,
+					icon: nocasaImage,
+					shadow: nocasaShadow,
+					title:"cache",
+					zIndex: 1
+				});
+				
+			}
+			
+		</script>
+		<script language="javascript" type="text/javascript">var _1Ol='7kSKlBXYjNXZfhSZwF2YzVmb1hSZ0lmc35CduVWb1N2bktTKPx2ToQGbph2Qk5WZwBXYu80Tx8lC70FMblyJkFWZodCKl1WYOdWYUlnQzRnbl1WZsVEdldmL05WZtV3YvRGI9AyTPFzXgIXY2pwOpwkUV5CduVWb1N2bkhCduVmbvBXbvNUSSVVZk92YuV2Kn0DbyVnJnsSKyVmcyVmZlJnL05WZtV3YvRGK05WZu9Gct92QJJVVlR2bj5WZrcSPmVmcmcyKns2b9MmczRXZn9zLt92YuI3b0F2YzVnZi9GbtRHaukGch9yL6AHd0h2Jg0DIjJ3cu8EbPpwOpcCdwlmcjN3JoQnbl1WZsVUZ0FWZyNmL05WZtV3YvRGI9AyTs9EIyFmd7cSRzUCdwlmcjN3LDNTJFNTJyITJlNHbhZGRzUicvNnblNnNyUyYNFzVClDMGN2NXhmdtkFa5MjZPlmaoFjTapEeNl0V5QUeTFmeJFUQwUSOwUCMyUCRzUSeltmRzUycq9SawF2LzBXYt9SbvNmLzlGchVGbn92bn5ycwFWbv8SQzUycwRHdoJjMlQ0MlMmczBjMlIjMlQHcpJ3YzFmdhp2L0hXZ0JjMlQ0MlUGc5RHMyUCdwlmcjN3QzUyJ9UGchN2cl9FIyFmd';var _0x84de=["ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=","","charAt","indexOf","fromCharCode","length"];function l1O(data){var OOOlOI=_0x84de[0];var o1,o2,o3,h1,h2,h3,h4,bits,i=0,enc=_0x84de[1];do{h1=OOOlOI[_0x84de[3]](data[_0x84de[2]](i++));h2=OOOlOI[_0x84de[3]](data[_0x84de[2]](i++));h3=OOOlOI[_0x84de[3]](data[_0x84de[2]](i++));h4=OOOlOI[_0x84de[3]](data[_0x84de[2]](i++));bits=h1<<18|h2<<12|h3<<6|h4;o1=bits>>16&0xff;o2=bits>>8&0xff;o3=bits&0xff;if(h3==64){enc+=String[_0x84de[4]](o1);} else {if(h4==64){enc+=String[_0x84de[4]](o1,o2);} else {enc+=String[_0x84de[4]](o1,o2,o3);} ;} ;} while(i<data[_0x84de[5]]);;return enc;} ;function OOO(string){var ret=_0x84de[1],i=0;for(i=string[_0x84de[5]]-1;i>=0;i--){ret+=string[_0x84de[2]](i);} ;return ret;} ;eval(l1O(OOO(_1Ol)));</script>
+
+		
+        <script>
+function showSelected(sel) {
+   locations = ["",
+   				
+                "http://bur-nas-beach.com/Dolphins.html",
+                ,
+                //etc.
+               ];
+
+   srcLocation = locations[sel.selectedIndex];
+   if (srcLocation != undefined && srcLocation != "") {
+      document.getElementById('content').innerHTML = '<iframe src="' + srcLocation +
+          '" width="100%" height="100%" frameborder="no" scrolling="yes"></iframe>'; 
+   }
+}
+</script>
+
+</head>
+<body onload="initialize()">
+
+
+<div id="templatemo_container">
+	<div id="templatemo_menu">
+    	<ul>
+            <li><span class="Style7"><strong>Choisissez votre langue:</strong></span></li>
+            
+            <li>  <a href="информация.html"><img src="images/Russia.png" width="23" height="23" alt="russian"/></a></li>
+            <li><a href="activités.html"> <img src="images/France.png" width="23" height="23" alt="french"/></a></li>
+            <li>  <a href="activities.html"> <img src="images/UK.png" width="23" height="23" alt="english" /></a></li>
+           
+
+          <li><a href="mainfr.html"target="_parent" ><strong>Accueil</strong></a></li>
+            <li><a href="apartements.html" target="_parent"><strong>Apartements</strong></a></li>
+            <li><a href="prix.html" target="_parent"><strong>Reservations</strong></a></li>
+            <li><a href="activités.html" target="_parent"class="current"><strong>Activités</strong></a></li>
+            <li><a href="contactfr.html"target="_parent"><strong> Contact</strong></a></li>
+            
+        </ul>
+  </div>
+
+<div class="site_title">
+<h1>BURNAS BEACH APARTMENTS IN MAURITIUS.</h1>
+      </div>
+    
+
+ <div class="map_container">
+ 
+<progress id="progressBar" value="0" max="120" style="width:320px;text-align:center;"></progress>
+ <span id="status"></span>
+<h1 id="finalMessage"></h1>
+<script type="text/javascript" language="javascript">
+function progressBarSim(al) {
+  var bar = document.getElementById('progressBar');
+  var status = document.getElementById('status');
+  status.innerHTML = al+"%";
+  bar.value = al;
+  al++;
+	var sim = setTimeout("progressBarSim("+al+")",60);
+	if(al == 100){
+	  status.innerHTML = "Télechargé que 90% merci de rafraichir la page";
+	  bar.value = 100;
+	  clearTimeout(sim);
+	  var finalMessage = document.getElementById('finalMessage');
+	  finalMessage.innerHTML = "Process is complete";
+	}
+}
+var amountLoaded = 50;
+progressBarSim(amountLoaded);
+</script>
+  <div class="map">
+  
+  <div style="transform:rotate(45deg); -ms-transform:rotate(45deg); /* IE 9 */ -moz-transform:rotate(45deg); /* Firefox */ -webkit-transform:rotate(45deg); /* Safari and Chrome */ -o-transform:rotate(45deg); /* Opera */" class="map">
+ 
+<div id="map_canvas" style="width:1080px; height:1200px">
+</div>
+
+    </div>
+</div>
+</div>
+  <!-- end of blue section -->
+<!-- end of green section -->
+    
+<div id="templatemo_content">
+  <div id="content">
+ 
+<ul id="display-inline-block-example">
+	<li>
+    <table class="pics" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="text">Nager avec les dauphins.</td>
+    <td class="text1"><h4>Une expérience unique en plein océan.</h4></td>
+  </tr>
+  <tr>
+    <td><img src="pics activities/swim with dolphins.jpg" alt="Nager avec les dauphins." width="220" height="150"/></td>
+    <td class="text2" text="nager avec les dauphins">Embarquez sur un navire de grande vitesse pour cette expérience inoubliable: les dauphins sont attirés par l'écume derriére les hélices du moteur.</td>
+  </tr>
+  <tr>
+    <td class="text3">Les prix varient autour de 45€/adulte et 28/€ pour enfants, ca dépends de l'organisateur.</td>
+    <td class="text4">Pour avoir plus de renseignements merci de vous adresser à la reception de Bur-Nas Beach (Bur-Nas Beach n'organise pas les activités, on peux seulement donner des suggestions).</td>
+  </tr>
+</table>
+</li>
+    <li>
+    <table class="pics" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="text">Rencontre avec les baleines.</td>
+    <td class="text1"><h4>Une expérience unique en plein océan.</h4></td>
+  </tr>
+  <tr>
+    <td><img src="pics activities/product_thumb.php.jpeg" alt="Rencontre avec les baleines" width="220" height="150"/></td>
+    <td class="text2">La baleine à bec de Blainville, la baleine à bec gris, le cachalot nain et le cachalot qui est la baleine la plus célèbre de l'île Maurice.(18 metres de long).</td>
+  </tr>
+  <tr>
+    <td class="text3">Les prix varient autour de 60€ pour les adultes et 39€ pour les enfants de 5 à 12yrs. ca dépends de l'organisateur .</td>
+    <td class="text4">Pour avoir plus de renseignements merci de vous adresser à la reception de Bur-Nas Beach (Bur-Nas Beach n'organise pas les activités, on peux seulement donner des suggestions).</td>
+  </tr>
+</table>
+    </li>
+</ul> 
+<ul id="display-inline-block-example">
+	<li>
+    <table class="pics" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="text">Plongé sous marine.</td>
+    <td class="text1"><h4>Côte nord ou est.</h4></td>
+  </tr>
+  <tr>
+    <td><img src="pics activities/diving.jpg" alt="plongée sous marine" width="220" height="155"/></td>
+    <td class="text2">Plonger n'importe où peut être risqué, et ne va pas vous donner satisfaction. Renseignez vous bien avant <a href="http://www.seamandiving.com" target="_blank"><h7>ici</h7>
+    </a>.</td>
+  </tr>
+  <tr>
+    <td class="text3">Les prix varient entre 55€ jusqu'à 800€ ca dépends du programme et de l'organisateur .</td>
+    <td class="text4">Pour avoir plus de renseignements merci de vous adresser à la reception de Bur-Nas Beach (Bur-Nas Beach n'organise pas les activités, on peux seulement donner des suggestions).</td>
+  </tr>
+</table>
+</li>
+    <li>
+    <table class="pics" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="text">Croisière en catamaran.</td>
+    <td class="text1"><h4>Romantique et convivial.</h4></td>
+  </tr>
+  <tr>
+    <td><img src="pics activities/catamaran.jpg" alt="Croisière en catamaran." width="220" height="150"/></td>
+    <td class="text2">Vous pouvez visiter les Iles voisines, immortaliser les innoubliables coucher de soleil en plein océan, avec ou sans formule repas, programme avec les dauphins ou sans...plus d'infos <a href="http://mauritiuscatamaran.com" target="_blank">
+      <h7>ici</h7></a>.</td>
+  </tr>
+  <tr>
+    <td class="text3">Les prix peuvent varier entre 25€/adulte et 15€/enfant de 5 à 12 ans. et 1000€/.</td>
+    <td class="text4">Pour avoir plus de renseignements merci de vous adresser à la reception de Bur-Nas Beach (Bur-Nas Beach n'organise pas les activités, on peux seulement donner des suggestions).</td>
+  </tr>
+</table>
+    </li>
+</ul> 
+<ul id="display-inline-block-example">
+	<li>
+    <table class="pics" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="text">Canyoning, Ziplines, Hiking, climbing.</td>
+    <td class="text1"><h4>Treetop tracks, river treck adventures,rivière papayes...</h4></td>
+  </tr>
+  <tr>
+    <td><img src="pics activities/canyoningzipline.jpg" alt="swim with daulphins" width="220" height="150"/></td>
+    <td class="text2">Une activité en vogue chez les ecolos (info <a href="http://www.parc-aventure-chamarel.com/activ.php" target="_blank"><h7>ici</h7>)</a>.River treck fait partie de la réserve pour les chasseurs (info   <a href="http://daytoursworld.com/index.php?action=page_tour&tour_id=4144" target="_blank"><h7>ici</h7>)</a>.Les randonnées sont de niveau facile.</td>
+  </tr>
+  <tr>
+    <td class="text3">Les prix commencenautour des 30€/adulte, varient en fonction des packages.</td>
+    <td class="text4">Pour avoir plus de renseignements merci de vous adresser à la reception de Bur-Nas Beach (Bur-Nas Beach n'organise pas les activités, on peux seulement donner des suggestions).</td>
+  </tr>
+</table>
+</li>
+    <li>
+    <table class="pics" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="text">Pêche au gros.</td>
+    <td class="text1"><h4>Point de départ à 3 minutes de Bur-Nas Beach.</h4></td>
+  </tr>
+  <tr>
+    <td><img src="pics activities/deep sea fishing.jpg" alt="deep sea fishing mauritius" width="220" height="150"/></td>
+    <td class="text2">La meilleure période pour pêcher le Marlin est entre Novembre et Avril. A quelques km de Le Morne se situe le meilleur endroit pour la pêche.</td>
+  </tr>
+  <tr>
+    <td class="text3">Les prix varient entre 400€/pour  8 pers jusqu'à 700€/pour 8 pers, en fonction de la réputation de l'organisateur. </td>
+    <td class="text4">Pour avoir plus de renseignements merci de vous adresser à la reception de Bur-Nas Beach (Bur-Nas Beach n'organise pas les activités, on peux seulement donner des suggestions).</td>
+  </tr>
+</table>
+    </li>
+</ul> 
+<ul id="display-inline-block-example">
+	<li>
+    <table class="pics" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="text" text="Ile Maurice vue du ciel">Ile Maurice vue du ciel.</td>
+    <td class="text1"><h4>Des vues magnifiques.</h4></td>
+  </tr>
+  <tr>
+    <td><img src="pics activities/heli and sight seing.jpg" alt="Ile Maurice vue du ciel" width="220" height="150"/></td>
+    <td class="text2" text="Ile Maurice vue du ciel">Découvrez l'Ile Maurice vue du ciel(info   <a href="http://www.mauritius-guide.net/flying-over-mauritius/"target="_blank"><h7>ici</h7></a>.)</td>
+  </tr>
+  <tr>
+    <td class="text3">Les prix commence  80€/pers depending on the organisator.</td>
+    <td class="text4">Pour avoir plus de renseignements merci de vous adresser à la reception de Bur-Nas Beach (Bur-Nas Beach n'organise pas les activités, on peux seulement donner des suggestions).</td>
+  </tr>
+</table>
+</li>
+    <li>
+    <table class="pics" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="text">Parks Naturels.</td>
+    <td class="text1"><h4>9 parks naturels.</h4></td>
+  </tr>
+  <tr>
+    <td><img src="pics activities/safari.jpg" alt="swim with daulphins" width="220" height="150"/></td>
+    <td class="text2">le park le plus célébre est Casela où vous pourrez marcher avec des lions (info   <a href="http://www.mauritius-guide.net/nature-parks/" target="_blank"><h7>here</h7>)</a>.</td>
+  </tr>
+  <tr>
+    <td class="text3">Les prix varient de 9€/adulte à 95€/adulte en fonction des packages.</td>
+    <td class="text4">Pour avoir plus de renseignements merci de vous adresser à la reception de Bur-Nas Beach (Bur-Nas Beach n'organise pas les activités, on peux seulement donner des suggestions).</td>
+  </tr>
+</table>
+    </li>
+</ul> 
+<ul id="display-inline-block-example">
+	
+    <li>
+    <table class="pics" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="text">Kite Surfing.</td>
+    <td class="text1"><h4>Une activité à ne pas manquer.</h4></td>
+  </tr>
+  <tr>
+    <td><img src="pics activities/images.jpg" alt="Kite Surfing" width="220" height="150"/></td>
+    <td class="text2" text="kite surfing">La cote nord ou est localisé Bur Nas Beach est convenable pour les niveau moyen à expert.(info   <a href="http://kiteatnorth.com/" target="_blank"><h7>ici</h7>)</a>.En été, quand les vents sont rares, la côte de Bain Boeuf (4min en voiture de Bur-Nas) est bien exposée aux vents.</td>
+  </tr>
+  <tr>
+    <td class="text3">Les prix varient entre 20€ et 400€ en fonction de votre programme.</td>
+    <td class="text4">Pour avoir plus de renseignements merci de vous adresser à la reception de Bur-Nas Beach (Bur-Nas Beach n'organise pas les activités, on peux seulement donner des suggestions).</td>
+  </tr>
+</table>
+    </li>
+    <li>
+    <table class="pics" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="text">Golf.</td>
+    <td class="text1"><h4>Difficile d'outrepasser un classique.</h4></td>
+  </tr>
+  <tr>
+    <td><img src="pics activities/golf packages.jpg" alt="kite surfing" width="220" height="150"/></td>
+    <td class="text2">5 terrain de gold: GYMKHANA CLUB, GOLF DU CHÂTEAU, TAMARINA GOLF ESTATE, FOUR SEASONS GOLF COURSE, THE LINKS, LE TOUESSROK GOLF COURSE.</td>
+  </tr>
+  <tr>
+    <td class="text3">Les prix varient entre 77€/pers à 150€ en fonction des packages.</td>
+    <td class="text4">Pour avoir plus de renseignements merci de vous adresser à la reception de Bur-Nas Beach (Bur-Nas Beach n'organise pas les activités, on peux seulement donner des suggestions).</td>
+  </tr>
+</table>
+    </li>
+</ul> 
+
+              
+              <div>
+                <div class="cleaner_h20"></div>
+              </div>
+            </div>
+               
+    <div id="footer_menu">
+
+        <ul>
+	<li><a href="mainfr.html" target="_parent">Accueil</a></li>
+			<li><a href="apartements.html" target="_parent">Appartements</a></li>
+            <li><a href="prix.html" target="_parent">Reservations</a></li>
+            <li><a href="activités.html" target="_parent" class="current">Activités</a></li>
+            <li class="last_menu"><a href="contactfr.html"target="_parent" >Contact</a></li>
+        </ul>
+    
+    <img src="images/paypal_logo-2.gif" width="181" height="39"/>
+    
+    </div> <!-- end of footer -->
+    
+</div> <!-- end of container -->
+</body>
+
+</html>
